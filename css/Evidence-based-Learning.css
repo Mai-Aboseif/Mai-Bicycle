@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0e1b2b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #233f80;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #192f60;
+}
+::selection {
+  background-color: #f7efdd;
+  color: white;
+}
+
+:root {
+  font-family: 'ADLaM Display', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+
+  /* Darker variants for hover */
+  --swiper-navigation-size: 30px !important;
+  --swiper-theme-color: #edc048 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+body {
+  background: #f7efdd;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
+span.s {
+  color: var(--peach);
+  font-size: 21px;
+  font-weight: bolder;
+}
+
+span.b {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #ffefcb;
+  font-family: 'Inter';
+  margin: 20px 0;
+}
+
+.margin-box {
+  margin: 25px 0;
+}
+
+a {
+  color: white;
+}
+
+/* Feedback */
+.swiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  width: 370px !important;
+  padding: 0 -20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #b88e45;
+}
+
+/* Long-term relationships section */
+.long-term-relationship {
+  padding: 50px 0px 0px 30px;
+}
+
+.long-term-relationship .text-section h6 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #333;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 75px;
+}
+
+.long-term-relationship .text-section h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #333;
+}
+
+.long-term-relationship .image-section {
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.long-term-relationship .image-section:hover {
+  scale: 1.01;
+}
+
+.long-term-relationship .image-section img {
+  height: 450px;
+  width: auto;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+ol {
+  list-style: none;
+  counter-reset: list;
+  padding: 0 1rem;
+}
+
+li {
+  --stop: calc(100% / var(--length) * var(--i));
+  --l: 62%;
+  --l2: 88%;
+  --h: calc((var(--i) - 1) * (180 / var(--length)));
+  --c1: hsl(var(--h), 71%, var(--l));
+  --c2: hsl(var(--h), 71%, var(--l2));
+
+  position: relative;
+  counter-increment: list;
+  max-width: 45rem;
+  margin: 2rem auto;
+  padding: 2rem 1rem 1rem;
+  box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  background-color: white;
+  list-style: none;
+}
+
+li::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--c1) var(--stop),
+    var(--c2) var(--stop)
+  );
+}
+
+h3 {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 1rem;
+  color: rgb(70 70 70);
+}
+
+h3::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  content: counter(list);
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: var(--c1);
+  color: white;
+}
+
+@media (min-width: 40em) {
+  li {
+    margin: 3rem auto;
+    padding: 3rem 2rem 2rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    margin: 0 0 2rem;
+  }
+
+  h3::before {
+    margin-right: 1.5rem;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 1px;
+}
+
+.footer-title span a {
+  text-decoration: none;
+  color: #3a6cf4;
+  font-size: 1.2em;
+}
+
+.footer-title span a:hover {
+  color: red;
+}
+
+.footer-title .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}

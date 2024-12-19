@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+/* 
+#FFEFCD
+
+#424530
+
+#A68E74
+
+#E09132 */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--midnight);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--navy);
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--navy-dark);
+}
+::selection {
+  background-color: var(--lavender);
+  color: white;
+}
+
+:root {
+  font-family: "ADLaM Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+
+  /* Variables */
+
+  --background: #E09132;
+  --navy: #233f80;
+  --lavender: #a89ca8;
+  --gold: #edc048;
+  --taupe: #897a73;
+  --peach: #ffefcb;
+  --slate: #0e1b2b;
+  --ink: #14253a;
+  --midnight: #0e1b2b;
+  --nav: #16263a;
+  /* --text: rgb(255, 0, 0); */
+
+  /* Darker variants for hover */
+  --navy-dark: #192f60;
+  --gold-dark: #b88e45;
+  --swiper-navigation-size: 30px !important;
+  --swiper-theme-color: #edc048 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+img,
+button {
+  user-select: none;
+}
+
+/* container */
+.parent {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .parent {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .parent {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .parent {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .parent {
+    width: 1370px;
+  }
+}
+
+/* inputs */
+input,
+textarea,
+select {
+  padding: 13px 15px;
+  /* border: 2px solid rgb(214, 214, 214); */
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  transition: var(--transition) border-color;
+  margin: 2px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 3px solid var(--navy);
+  margin: 0;
+}
+
+.sub-title {
+  color: var(--gold);
+  font-size: 21px;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  outline: none;
+  border: 0;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 7px 20px;
+  border-radius: 5px;
+  transition: 0.5s background;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: white;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: var(--navy-dark);
+}
+
+.btn-navy {
+  background: var(--navy);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-navy:hover {
+  background: var(--navy-dark);
+}
+
+.btn-nav {
+  background: var(--nav);
+  color: white;
+  width: 100%;
+}
+
+.btn-landing {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+span.s {
+  color: var(--peach);
+  font-size: 21px;
+  font-weight: bolder;
+}
+
+span.b {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--peach);
+  font-family: "Inter";
+  margin: 20px 0;
+}
+
+.margin-box {
+  margin: 25px 0;
+}
+
+a {
+  color: white;
+}

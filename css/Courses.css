@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+a {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0e1b2b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #233f80;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #192f60;
+}
+::selection {
+  background-color: #f7efdd;
+  color: white;
+}
+
+:root {
+  font-family: 'ADLaM Display', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+
+  /* Darker variants for hover */
+  --swiper-navigation-size: 30px !important;
+  --swiper-theme-color: #edc048 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+/* Feedback */
+.swiper {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  width: 370px !important;
+  padding: 0 -20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #b88e45;
+}
+
+/* Footer of about */
+
+.long-term-relationship .footer-of-about {
+  background-color: #000016;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 10% 1% 10%;
+}
+
+.long-term-relationship .footer-of-about-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 1px;
+  color: #f7efdd;
+}
+
+/* Footer of about */
+
+.footer-of-about {
+  background-color: #000016;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-of-about-title {
+  font-size: 1.1rem;
+  padding: 20px 25px;
+  color: #fff;
+}
+.PhilosophyEthicsofConservation {
+  margin: 40px 200px;
+}
+
+.PhilosophyEthicsofConservation div {
+  margin-bottom: 30px;
+}
+
+.PhilosophyEthicsofConservation .image-section {
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.PhilosophyEthicsofConservation .image-section:hover {
+  scale: 1.01;
+}
+
+.PhilosophyEthicsofConservation .image-section img {
+  height: 450px;
+  width: auto;
+}
+
+.PhilosophyEthicsofConservation h2 {
+  /* #FFEFCD
+
+#424530
+
+#A68E74
+
+#E09132 */
+  color: #56a21c;
+}
+
+.video-container {
+  width: 80%;
+  max-width: 720px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  /* background-color: #000; */
+}
+
+.custom-video {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #000016;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 1px;
+}
+
+.footer-title span a {
+  text-decoration: none;
+  color: #3a6cf4;
+  font-size: 1.2em;
+}
+
+.footer-title span a:hover {
+  color: red;
+}
+
+.footer-title .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}
